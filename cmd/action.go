@@ -92,7 +92,7 @@ func Action(ctx *cli.Context) error {
 	case ctx.Bool("nextmonth"):
 		resp = parseNextMonth(resp)
 		if len(resp) == 0 {
-			displayHeader("Le moisc prochain")
+			displayHeader("Le mois prochain")
 			fmt.Println(Red("Aucun cours\n"))
 			break
 		}
